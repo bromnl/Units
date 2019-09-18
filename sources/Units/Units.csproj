@@ -7,8 +7,15 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Rob Brommer</Authors>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <PackageTags>Unit Pressure Pascal Bar Psi Atmosphere Torr</PackageTags>
-    <Version>0.0.1</Version>
+    <PackageTags>Unit Pressure Area Electric Current Length Mass Temperature Time Pascal Bar Psi Atmosphere Torr Mile Yard Are Acre Square Foot Inch Meter Yard Ampere LightYears AstronomicalUnits Parsecs Kilogram Tonne Slug Pound Planck Mass Solar Celsius Delisle Fahrenheit Newton Rankine Réaumur Rømer Second Minute Hour Day Week</PackageTags>
+    <Version>0.2.0</Version>
+    <PackageId>SI.Units</PackageId>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/bromnl/Units</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bromnl/Units.git</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
