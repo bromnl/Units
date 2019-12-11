@@ -10,11 +10,11 @@
     <Authors>Rob Brommer</Authors>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageTags>Unit Pressure Area Electric Current Length Mass Temperature Time Pascal Bar Psi Atmosphere Torr Mile Yard Are Acre Square Foot Inch Meter Yard Ampere LightYears AstronomicalUnits Parsecs Furlong Kilogram Tonne Slug Pound Planck Mass Solar Celsius Delisle Fahrenheit Newton Rankine Réaumur Rømer Second Minute Hour Day Week</PackageTags>
-    <Version>0.2.1</Version>
+    <Version>0.3.0</Version>
     <PackageId>SI.Units</PackageId>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>0.2.1.0</AssemblyVersion>
-    <FileVersion>0.2.1.0</FileVersion>
+    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+    <FileVersion>0.3.0.0</FileVersion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/bromnl/Units</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bromnl/Units.git</RepositoryUrl>
