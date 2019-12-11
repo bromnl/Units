@@ -20,6 +20,7 @@ namespace Units
             {LengthUnit.LightYear, 9.4607E15d},
             {LengthUnit.AstronomicalUnit, 149_597_870_700d},
             {LengthUnit.Parsec, 3.0857E16d},
+            {LengthUnit.Furlong, 201.168d}
         };
         private static readonly Dictionary<LengthUnit, string> UnitToStringDictionary =
             new Dictionary<LengthUnit, string>
@@ -31,7 +32,8 @@ namespace Units
                 {LengthUnit.Mile, "mi"},
                 {LengthUnit.LightYear, "ly"},
                 {LengthUnit.AstronomicalUnit, "au"},
-                {LengthUnit.Parsec, "pc"}
+                {LengthUnit.Parsec, "pc"},
+                {LengthUnit.Furlong, "fur"}
             };
 
         /// <summary>
@@ -79,9 +81,14 @@ namespace Units
         /// </summary>
         /// <value>The parsecs.</value>
         public double Parsecs => UnitValue / ConversionDictionary[LengthUnit.Parsec];
+        /// <summary>
+        /// Gets the furlongs.
+        /// </summary>
+        /// <value>The furlongs.</value>
+        public double Furlongs => UnitValue / ConversionDictionary[LengthUnit.Furlong];
 
         /// <summary>
-        /// Froms the meters.
+        /// Get a length based on the provided meters
         /// </summary>
         /// <param name="meters">The meters.</param>
         /// <returns>Length.</returns>
@@ -151,6 +158,15 @@ namespace Units
         public static Length FromParsecs(double parsecs)
         {
             return new Length(parsecs * ConversionDictionary[LengthUnit.Parsec]);
+        }
+        /// <summary>
+        /// Get a Length based on the provided furlongs.
+        /// </summary>
+        /// <param name="furlongs">The furlongs.</param>
+        /// <returns>Length.</returns>
+        public static Length FromFurlong(double furlongs)
+        {
+            return new Length(furlongs * ConversionDictionary[LengthUnit.Furlong]);
         }
 
         #region Operator overloads

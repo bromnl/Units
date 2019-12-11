@@ -36,6 +36,10 @@
         /// <summary>
         /// The parsec
         /// </summary>
-        Parsec
+        Parsec,
+        /// <summary>
+        /// The furlong
+        /// </summary>
+        Furlong
     }
 }

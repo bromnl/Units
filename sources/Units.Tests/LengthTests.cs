@@ -63,6 +63,13 @@ namespace Units.Tests
         }
 
         [TestMethod]
+        public void LengthFromFurlongsTest()
+        {
+            var length = Length.FromFurlong(1d);
+            Assert.AreEqual(1d, length.Furlongs);
+        }
+
+        [TestMethod]
         public void LengthAdditionsTest()
         {
             var length1 = Length.FromMeters(1.5d);
@@ -123,6 +130,9 @@ namespace Units.Tests
             length = Length.FromParsecs(123.456d);
             Assert.AreEqual("123.46 pc", length.ToString(LengthUnit.Parsec));
             Assert.AreEqual("123.46 pc", length.ToString(LengthUnit.Parsec, CultureInfo.InvariantCulture));
+            length = Length.FromFurlong(123.456d);
+            Assert.AreEqual("123.46 fur", length.ToString(LengthUnit.Furlong));
+            Assert.AreEqual("123.46 fur", length.ToString(LengthUnit.Furlong, CultureInfo.InvariantCulture));
         }
 
         [TestMethod]
