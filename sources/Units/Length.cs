@@ -16,7 +16,7 @@ namespace Units
             {LengthUnit.Inch, 0.0254d},
             {LengthUnit.Foot, 12d * 0.0254d},
             {LengthUnit.Yard, 36d * 0.0254d},
-            {LengthUnit.Mile, 5280d * 0.0254d},
+            {LengthUnit.Mile, 63_360 * 0.0254d},
             {LengthUnit.LightYear, 9.4607E15d},
             {LengthUnit.AstronomicalUnit, 149_597_870_700d},
             {LengthUnit.Parsec, 3.0857E16d},
